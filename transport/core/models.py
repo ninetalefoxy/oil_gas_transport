@@ -57,6 +57,13 @@ status = (
 
 class Orders(models.Model):
     order_id = models.AutoField(primary_key=True)
+    order_date = models.DateTimeField(auto_now=True)
+    location = models.CharField(max_length=100)
+    route = models.CharField(max_length=100)
+    delivery_type = models.CharField(max_length=100)
+    created_by = models.CharField(max_length=100)
+    delivery_date = models.DateField()
+    trip_id = models.CharField(max_length=100)
     tanker = models.ForeignKey(Tanker, on_delete=CASCADE,related_name='tanker_detail')
     driver = models.ForeignKey(Driver, on_delete=CASCADE,related_name='driver_detail')
     client = models.ForeignKey(Retail,on_delete=CASCADE)
