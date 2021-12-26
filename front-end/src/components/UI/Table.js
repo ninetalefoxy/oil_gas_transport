@@ -1,7 +1,9 @@
 import { BiEditAlt } from "react-icons/bi";
+import { API_URL } from "../../app-constant";
 
 const Table = () => {
-return(
+
+  return(
     <div>
         
       <table className="table">

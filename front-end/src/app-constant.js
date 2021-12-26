@@ -1,0 +1,1 @@
+export const API_URL = 'http://1fe5-103-207-8-157.ngrok.io/' //python endpoint

@@ -1,13 +1,14 @@
-import './App.css';
-import Table from './components/UI/Table';
+import "./App.css";
+import Table from "./components/UI/Table";
+import { BasicTable } from "./components/table/BasicTable";
 
- function App() {
+function App() {
   return (
     <div className="App">
-      <Table/>
+      {/* <Table/> */}
+      <BasicTable />
     </div>
   );
 }
-
 
 export default App;
