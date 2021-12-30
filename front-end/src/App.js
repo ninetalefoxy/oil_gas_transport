@@ -1,12 +1,11 @@
 import "./App.css";
-import Table from "./components/UI/Table";
-import { BasicTable } from "./components/table/BasicTable";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
-      {/* <Table/> */}
-      <BasicTable />
+      <Navbar />
+      <main>TEST MAIN</main>
     </div>
   );
 }
